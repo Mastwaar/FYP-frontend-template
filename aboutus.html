@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background:
+    linear-gradient(
+        90deg,
+        #8c52ff,
+        #5ce1e6
+      );
+}
+
+.one{
+            background-color: #d3f1ff;
+        }
+
+        .one .right_one a{
+            text-decoration: none;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            margin-left: 2cm;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 900;
+        }
+
+        #logo{
+            position: relative;
+            left: 6cm;
+            top: 6px;
+        }
+
+        .right_one{
+            position: absolute;
+            top: 30px;
+            left: 15cm;
+        }
+
+        #btn_one{
+            position: absolute;
+            right: 2cm;
+            top: 14px;
+            font-size: 20px;
+            border: solid 3px black;
+            padding: 10px;
+            border-radius: 30px;
+            background-color: black;
+            transition: 0.5s;
+            color: white;
+        }
+        #btn_one:hover{
+            cursor: pointer;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            font-weight: 300;
+            border: 3px solid rgb(0, 0, 0);
+        }
+
+        span{
+            font-weight: 900;
+            font-family: Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 55px;
+            text-align: center;
+        }
+
+        #img-two{
+            height: 500px;
+    position: relative;
+    left: 9.5cm;
+    bottom: 4cm;
+        }
+
+        #img-TWO{
+            height: 500px;
+    position: relative;
+    left: 9.5cm;
+    bottom: 4cm;
+        }
+
+        .main{
+            margin-left: 8cm;
+    margin-bottom: 3cm;
+    margin-top: 3cm;
+    display: inline-block;
+        }
+
+        .main_one_p{
+            font-size: 48px;
+            font-family: Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 67px;
+            margin-bottom: 40px;
+        }
+
+        .main_two{
+            font-weight: 900;
+            font-family: Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 28px;
+            line-height: 40px;
+            margin-bottom: 40px;
+        }
+
+        .main_three{
+            font-family: Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        .Main{
+            margin-left: 8cm;
+    margin-bottom: 3cm;
+    margin-top: 3cm;
+    display: inline-block;
+        }
+
+        .Main_one_p{
+            font-size: 48px;
+            font-family: Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 67px;
+            margin-bottom: 40px;
+        }
+
+        .Main_two{
+            font-weight: 900;
+            font-family: Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 28px;
+            line-height: 40px;
+            margin-bottom: 40px;
+        }
+
+        .Main_three{
+            font-family: Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        .section_p{
+            font-family: Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        .section{
+            margin-left: 8cm;
+    margin-bottom: 3cm;
+    margin-top: 3cm;
+    display: inline-block;
+        }
+
+        .company_founders{
+            margin-left:8cm ;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+            margin-top: 20px;
+
+        }
+
+        .company_founders > p{
+            font-weight: 900;
+            font-family:  Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 50px;
+            margin-left: 9cm;
+        }
+
+        .founder_images{
+            display: flex;
+            margin-left: 8cm;
+            margin-right: 8cm;
+            justify-content: space-between;
+        }
+
+        .img_one > .One{
+            background-color: rgb(15, 58, 78);
+            height: 12cm;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+
+        .One {
+            text-align: center;
+        }
+
+        .img_two > .Two{
+        background-color: rgb(15, 58, 78);
+        height: 12cm;
+        border-radius: 50%;
+        }
+
+        .expertise{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            display: grid;
+            
+        }
+
+        #expertise_p{
+            text-align: center;
+            font-size: 50px;
+            font-family: Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #founder_name{
+            text-align: center;
+            font-weight: 900;
+            font-family: Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 30px;
+        }
+
+        .expertise{
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            grid-template-rows:1fr 1fr 1fr;
+        }
+
+        .expert_one{
+            position: relative;
+            left: 7cm;
+            font-weight: 900;
+            font-family: Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .expert_three{
+            position: relative;
+            left: 7cm;
+            font-weight: 900;
+            font-family: Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .expert_five{
+            position: relative;
+            left: 7cm;
+            font-weight: 900;
+            font-family: Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .expert_two{
+            position: relative;
+            left: 5cm;
+            font-weight: 900;
+            font-family: Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .expert_four{
+            position: relative;
+            left: 5cm;
+            font-weight: 900;
+            font-family: Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .expert_six{
+            position: relative;
+            left: 5cm;
+            font-weight: 900;
+            font-family: Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .for_contact{
+            height: 500px;
+            width: 100%;
+            font-size: 30px;
+            font-family: Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+
+        #head{
+            padding-top: 50px;
+            text-decoration: underline;
+        }
+
+        .gmail1{
+            margin-top: 100px;
+        }
+
+        .gmail2{
+            margin-top: 50px;
+        }
+
+        .trusted{
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-family:  Calibri, 'Trebuchet MS', sans-serif;
+            position: relative;
+            top: 30%;
+            font-size: 30px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .trusted > p {
+            display: inline-block;
+        }
+
+        .nineteen{
+            border-top: solid 1px;
+            height: 180px;
+            background-color: black;
+        }
+
+        .nineteen > h1 {
+            margin-top: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .images{
+            position: relative;
+            top: 17px;
+        }
+
+        #img{
+            margin-left: 5.9cm;
+        }
+
+        #img_1{
+            margin-left: 5.9cm;
+            position: relative;
+            bottom: 30px;
+        }
+
+        #img_2{
+            margin-left: 5.9cm;
+            position: relative;
+            bottom: 30px;
+        }
+
+        .contact {
+            font-size: 40px;
+        }
+
+        iframe {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="left_one">
+            <div class="logo"><img id="logo" src="./logo.svg" alt="LOGO"></div>
+        </div>   
+        
+        <div class="right_one">
+                <a class="left_a" href="index.html">Home</a>
+                <a class="left_a" href="Speaking.html">SpeakTest</a>
+                <a class="left_a" href="Result.html">Result</a>
+                <a class="left_a" href="aboutus.html">About Us</a>
+        </div>
+        
+        <button id="btn_one" onclick="location.href = 'form.html';" id="btn_one">Sign In</button>
+    </div>
+
+        <div class="main">
+            <div class="main_one">
+                <p class="main_one_p"><span>About</span>Us</p>
+            </div>
+            <div class="main_two">
+                <p>What is AI Speak Wizard</p>
+            </div>
+            <div class="main_three">
+                <p>"AI Speak wizard is an AI-powered speaking assistant that helps you practice English speaking on the <br> go and improve your communication skills by recording and AI-analyzing your speech – without a <br> teacher or a speaking partner. It also makes accurate and almost instant English-level assessment, <br> which allows businesses to automate respective tasks."</p>
+            </div>
+            
+        </div>
+
+        
+    
+        <div class="Main">
+            <div class="Main_one">
+                <p class="Main_one_p">Our <span>mission</span></p>
+            </div>
+            <div class="Main_two">
+                <p>By improving language skills, we help people</p>
+            </div>
+            <div class="Main_three">
+                <p>Although English-speaking skills are a necessity nowadays, learning a language is not easy for <br> everyone. As non-native speakers, we have struggled for many years to reach a sufficient level of <br> speaking confidence. This is how we started AI-Speak Wizard - with the belief in mind that there is a <br> way to create a learning experience that would be accessible anytime and would bring notable <br> results within just a couple of months. <br><br> By improving education, we aim to create inclusive prosperity.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="Main_one">
+                <p class="Main_one_p">Our <span>team</span></p>
+            </div>
+            <div class="section_p">
+                <p>We are an Web Application Development company, founded in 2023, by two computer scientists <br> from UET TAXILA. We have 02+ years of industrial experience in Web Development and <br> Machine Learning, software development and reliability management.</p>
+            </div>
+        </div>
+
+        <div class="company_founders">
+            <p><span style="font-weight: lighter;">Founders</span></p>
+        </div>
+
+        <div class="founder_images">
+            <div class="img_one">
+                <img class="One" src="./Ahmad.png" alt="image">
+            <p id="founder_name"><span>M.Shahzaib</span> <br>
+            20-CS-49</p>
+            </div>
+            <div class="img_two">
+                <img class="Two" src="./Gajni.png" alt="image">
+            <p id="founder_name"><span>Ahmad Hassan</span> <br>
+            20-CS-67</p>
+            </div>
+        </div>
+
+        <p id="expertise_p">
+            <span>Facts: &nbsp;</span> Our &nbsp; <span>expertise</span>&nbsp; & <span>&nbsp;track record.</span>
+        </p>
+
+        <div class="expertise">
+            <div class="expert_one"><img src="./Vector_4.png" alt="logo"><p>Improve spoken language proficiency by providing <br>real-time feedback on pronunciation, intonation, and pacing.</p></div>
+            <div class="expert_two"><img src="./Vector_4.png" alt="logo"><p>Facilitate language learners in identifying and correcting <br>grammatical mistakes, reinforcing correct usage patterns.</p></div>
+            <div class="expert_three"><img src="./Vector_4.png" alt="logo"><p>Assist professionals in refining their communication for <br>public speaking, presentations, and business interactions.</p></div>
+            <div class="expert_four"><img src="./Vector_4.png" alt="logo"><p>Streamline learning processes with automated assessment,<br> saving time compared to manual evaluation.</p></div>
+            <div class="expert_five"><img src="./Vector_4.png" alt="logo"><p>Deliver objective and data-driven assessments of spoken language,<br> ensuring a standardized evaluation process.</p></div>
+            <div class="expert_six"><img src="./Vector_4.png" alt="logo"><p>Create an inclusive learning environment by accommodating <br>various language levels and diverse learning styles.</p></div>
+        </div>
+
+        <div class="for_contact">
+            <div id="head"><span>Let's talk!</span></div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-SKSihRjKQA?si=G01yP6rvycTWyFzx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <!-- <div class="gmail1"><span class="contact">For media requests:</span> zebimughal965@gmail.com</div>
+            <div class="gmail2"><span class="contact">Investor relations:</span> ahmadhassan2279@gmail.com</div> -->
+        </div>
+
+        <div class="trusted">
+            <p>"Learn a new language and get a new soul." <br> ‒ Czech proverb.</p>
+        </div>
+        <div class="nineteen">
+            <!-- <div class="images">
+                <img id="img_1" src="./alchemist.svg" alt="image">
+                <img id="img_2" src="./nvidia.svg" alt="image">
+            </div> -->
+            <h1>For Media Queries: <em>20-cs-49@students.uettaxila.edu.pk</em></h1>
+            <h1>For Business     : <em>20-cs-67@students.uettaxila.edu.pk</em></h1>
+        </div>
+        
+</body>
+</html>
